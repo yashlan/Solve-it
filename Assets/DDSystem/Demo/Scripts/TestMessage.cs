@@ -19,7 +19,7 @@ public class TestMessage : MonoBehaviour
         
         dialogTexts.Add(new DialogData("This Asset, The D'Dialog System has many features.", "Li"));
 
-        //dialogTexts.Add(new DialogData("You can easily change text /color:red/color, /color:white/and /size:up//size:up/size/size:init/ like this.", "Li", () => Show_Example(0)));
+        dialogTexts.Add(new DialogData("You can easily change text /color:red/color, /color:white/and /size:up//size:up/size/size:init/ like this.", "Li", () => Show_Example(0)));
 
         //dialogTexts.Add(new DialogData("Just put the command in the string!", "Li", () => Show_Example(1)));
 

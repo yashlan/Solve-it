@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace Yashlan
 {
-    public class PlayerPerfs_TAG : MonoBehaviour
+    public class ScoreManager : MonoBehaviour
     {
 
         #region instance Class
 
-        private static PlayerPerfs_TAG instance = null;
-        public static PlayerPerfs_TAG Instance
+        private static ScoreManager instance = null;
+        public static ScoreManager Instance
         {
             get { return instance; }
         }
@@ -32,14 +32,25 @@ namespace Yashlan
 
         #endregion of instance class
 
+        [SerializeField]
+        private int score;
 
-        #region ALL PLAYERPREFS DATA
+        // Start is called before the first frame update
+        void Start()
+        {
+            PlayerPrefs.GetInt(PlayerPerfs_TAG.SCORE, score);
+        }
 
-        public static string SCORE = "SCORE";
+        public static void AddScore(int amount)
+        {
+            instance.score += amount;
+        }
 
-        public static string BGM_VOLUME = "BGM_VOLUME";
+        // Update is called once per frame
+        void Update()
+        {
 
-        #endregion
+        }
     }
 
 }
