@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PindahScene : MonoBehaviour
+namespace Yashlan
 {
-
-
-    public void pindahScene(string NamaScene)
+    public class PindahScene : MonoBehaviour
     {
-        SceneManager.LoadScene(NamaScene);
+        public void pindahScene(string NamaScene)
+        {
+            SceneManager.LoadScene(NamaScene);
+        }
     }
-
 }
+

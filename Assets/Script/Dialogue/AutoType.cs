@@ -42,6 +42,7 @@ namespace Yashlan
 				message[3] = MateriRepository.MATERI_1_3;
 				message[4] = MateriRepository.MATERI_1_4;
 				message[5] = MateriRepository.MATERI_1_5;
+				message[6] = MateriRepository.MATERI_1_6;
 
 			}
 		}
@@ -56,6 +57,7 @@ namespace Yashlan
 				title[3] = MateriRepository.Judul_Materi_1_3;
 				title[4] = MateriRepository.Judul_Materi_1_4;
 				title[5] = MateriRepository.Judul_Materi_1_5;
+				title[6] = MateriRepository.Judul_Materi_1_6;
 			}
 		}
 
@@ -80,10 +82,7 @@ namespace Yashlan
 					SetMessage();
 					StartCoroutine(TypeTextJustOnce(0));
 				}
-			}
-
-
-
+			} 
 		}
 
 		private void Update()
@@ -91,7 +90,26 @@ namespace Yashlan
 			if (!startAutoType && !JustOnce)
 			{
 				startAutoType = true;
-				StartCoroutine(TypeText(0, 1, 2, 3, 4));
+
+                switch (message.Length) 
+				{
+					case 1:
+						StartCoroutine(TypeTextOne(0));
+						break;
+					case 2:
+						StartCoroutine(TypeTextTwo(0, 1));
+						break;
+					case 3:
+						StartCoroutine(TypeTextThree(0, 1, 2));
+						break;
+					case 4:
+						StartCoroutine(TypeTextFour(0, 1, 2, 3));
+						break;
+					case 5:
+						StartCoroutine(TypeTextFive(0, 1, 2, 3, 4));
+						break;
+				}
+
 			}
 		}
 
@@ -158,8 +176,150 @@ namespace Yashlan
 		}
         #endregion
 
+
+
         #region INTRUKSI
-        IEnumerator TypeText(int index0, int index1, int index2, int index3, int index4)
+
+		IEnumerator TypeTextOne(int index0)
+        {
+            while (true)
+            {
+				foreach (char letter in message[index0].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+			}
+        }
+
+		IEnumerator TypeTextTwo(int index0, int index1)
+		{
+			while (true)
+			{
+				foreach (char letter in message[index0].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+				foreach (char letter in message[index1].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+			}
+		}
+
+		IEnumerator TypeTextThree(int index0, int index1, int index2)
+        {
+            while (true)
+            {
+				foreach (char letter in message[index0].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+				foreach (char letter in message[index1].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+				foreach (char letter in message[index2].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+			}
+
+		}
+
+		IEnumerator TypeTextFour(int index0, int index1, int index2, int index3)
+        {
+			while (true)
+			{
+				foreach (char letter in message[index0].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+				foreach (char letter in message[index1].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+				foreach (char letter in message[index2].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+				foreach (char letter in message[index3].ToCharArray())
+				{
+					textMesh.text += letter;
+					if (sound != null)
+						audio_.PlayOneShot(sound);
+					yield return 0;
+					yield return new WaitForSeconds(delay);
+				}
+				yield return new WaitForSeconds(1.5f);
+				textMesh.text = "";
+				yield return new WaitForSeconds(1.0f);
+			}
+		}
+
+		IEnumerator TypeTextFive(int index0, int index1, int index2, int index3, int index4)
 		{
 			while (true)
 			{

@@ -353,7 +353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quiz 2
+  m_Text: Kuis 2
 --- !u!222 &69052359
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -738,7 +738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quiz 3
+  m_Text: Kuis 3
 --- !u!222 &658932770
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1559,7 +1559,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quiz 1
+  m_Text: Kuis 1
 --- !u!222 &2044709876
 CanvasRenderer:
   m_ObjectHideFlags: 0

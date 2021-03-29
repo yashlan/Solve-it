@@ -34,12 +34,13 @@ namespace Yashlan
 
         #region JUDUL MATERI 1
 
-        public static string Judul_Materi_1_0 = "PENGENALAN PYHTON";
+        public static string Judul_Materi_1_0 = "PENGENALAN PYTHON";
         public static string Judul_Materi_1_1 = "INSTALASI";
-        public static string Judul_Materi_1_2 = "CARA MEMBUAT PROGRAM PYTHON";
+        public static string Judul_Materi_1_2 = "MEMULAI PROGRAM PYTHON";
         public static string Judul_Materi_1_3 = "SINTAKS";
         public static string Judul_Materi_1_4 = "KOMENTAR";
         public static string Judul_Materi_1_5 = "VARIABEL";
+        public static string Judul_Materi_1_6 = "BOOLEAN";
 
 
         #endregion
@@ -51,7 +52,7 @@ namespace Yashlan
                                           "namun seiring makin populernya bahasa python, " +
                                           "aplikasi yang dihasilkan mulai beragam fungsi."+
                                           "Python adalah bahasa pemrograman interpreter multifungsi " +
-                                          "yang berorientasi objek yang memakai filosofi" +
+                                          "yang berorientasi objek yang memakai filosofi " +
                                           "perancangan dengan fokus kepada tingkat keterbacaan kode.";
 
 
@@ -68,13 +69,13 @@ namespace Yashlan
         public static string MATERI_1_3 = "Python sintaks dapat dieksekusi langsung dengan mengetikkannya di Command Line." +
                                           " Selain itu, Anda dapat membuat file Python di dalam server menggunakan ekstensi .py " +
                                           "dan menjalankannya menggunakan Command Line.\n " +
-                                          "contoh >>> print(“Hello, World!”) outputnya : Hello, World!";
+                                          "contoh <color=red>>>> print(“Hello, World!”)</color> \noutputnya : <color=red>Hello, World!</color>";
 
         public static string MATERI_1_4 = "Sama seperti bahasa pemrograman lainnya, " +
                                           "Python juga memiliki kode untuk menjadikan baris program menjadi komentar. " +
                                           "Anda dapat menggunakan tanda pagar ‘#’ " +
                                           "untuk menjadikan baris kode di Python menjadi komentar. \n" +
-                                          "contoh : # ini adalah baris komentar";
+                                          "contoh : <color=red># ini adalah baris komentar</color>";
 
         public static string MATERI_1_5 = "Python juga memiliki Variabel, " +
                                           "tidak berbeda dengan bahasa pemrograman lainnya. " +
@@ -83,9 +84,17 @@ namespace Yashlan
                                           "Kemudahan lainnya, Anda tidak perlu mendefinisikan tipe variabel." +
                                           " Python secara otomatis akan memberikan tipe variabel sesuai" +
                                           " dengan nilai yang diberikan" +
-                                          " pada variabel tersebut. Misalnya pada contoh di bawah ini:\n" + 
-                                          "x = 5 # x bertipe integer\n " +
-                                          "y = “Andre” # y bertipe string";
+                                          " pada variabel tersebut. Misalnya pada contoh di bawah ini:\n" +
+                                          "<color=red>x = 5 # x bertipe integer</color>\n" +
+                                          "<color=red>y = “anthon” # y bertipe string</color>";
+
+        public static string MATERI_1_6 = "Setelah mempelajari variabel bekerja, " +
+                                          "di bagian ini Anda akan belajar tentang Booleans. " +
+                                          "Jika Variabel dapat menyimpan bilangan dengan satu tipe data," +
+                                          " booleans juga digunakan untuk menyimpan sebuah tipe data, tapi tipe data yang berbeda.\n" +
+                                          "Tipe data di Booleans hanya ‘benar’ atau ‘salah’. Jadi ini mirip dengan saklar lampu, hanya memiliki dua nilai.\n" +
+                                          "contoh :\n<color=red>a = true # true artinya benar</color>\n" +
+                                          "<color=red>b = false # false artinya salah";
 
         #endregion
 

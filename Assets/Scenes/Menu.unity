@@ -420,7 +420,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quiz
+  m_Text: Kuis
 --- !u!222 &270840413
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -887,16 +887,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be26fa9fdc67cd046a34207d89c83e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn_next: {fileID: 0}
+  autoTypeTitle: 0
   JustOnce: 0
+  btn_next: {fileID: 0}
   delay: 0.07
   sound: {fileID: 8300000, guid: d892de2cb9eb07941bef7f5f4245c1b3, type: 3}
+  title: []
   message:
-  - Pilih tombol Materi jika
-  - ingin mempelajari materi-materi
-  - Pilih tombol Quiz jika
-  - ingin mencoba hasil belajar, dan
-  - Pilih kembali jika ingin ke menu
+  - selamat datang di menu
+  - tekan tombol materi jika ingin mempelajari materinya terlebih dahulu
+  - atau anda bisa mencoba kuisnya jika sudah mempelajari materinya
 --- !u!222 &697742554
 CanvasRenderer:
   m_ObjectHideFlags: 0

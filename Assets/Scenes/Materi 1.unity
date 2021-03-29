@@ -211,8 +211,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 32
-  m_HorizontalAlignment: 32
+  m_fontStyle: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -262,10 +262,11 @@ MonoBehaviour:
   autoTypeTitle: 0
   JustOnce: 1
   btn_next: {fileID: 609824364}
-  delay: 0.07
+  delay: 0.02
   sound: {fileID: 8300000, guid: d892de2cb9eb07941bef7f5f4245c1b3, type: 3}
   title: []
   message:
+  - 
   - 
   - 
   - 
@@ -1642,9 +1643,10 @@ MonoBehaviour:
   autoTypeTitle: 1
   JustOnce: 1
   btn_next: {fileID: 609824364}
-  delay: 0.07
+  delay: 0.02
   sound: {fileID: 8300000, guid: d892de2cb9eb07941bef7f5f4245c1b3, type: 3}
   title:
+  - 
   - 
   - 
   - 

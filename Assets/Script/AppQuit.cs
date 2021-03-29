@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AppQuit : MonoBehaviour
+namespace Yashlan
 {
-    public void ExitGame()
+    public class AppQuit : MonoBehaviour
     {
-        Application.Quit();
-        Debug.Log("exit game");
+        public void ExitGame()
+        {
+            Application.Quit();
+            Debug.Log("exit game");
+        }
     }
 }
+

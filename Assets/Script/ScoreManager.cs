@@ -35,22 +35,36 @@ namespace Yashlan
         [SerializeField]
         private int score;
 
+        public static int Score 
+        { 
+            get 
+            { 
+                return instance.score; 
+            } 
+            set 
+            {
+                instance.score = value; 
+            }  
+        }
+
         // Start is called before the first frame update
         void Start()
         {
-            PlayerPrefs.GetInt(PlayerPerfs_TAG.SCORE, score);
+            score = 0;
         }
 
-        public static void AddScore(int amount)
+        public static void PlusScore(int amount)
         {
-            instance.score += amount;
+            if(instance.score < 100)
+                instance.score += amount;
         }
 
-        // Update is called once per frame
-        void Update()
+        public static void MinScore(int amount)
         {
-
+            if(instance.score > 0)
+                instance.score -= amount;
         }
+
     }
 
 }

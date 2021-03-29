@@ -2,49 +2,53 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackSoundManager : MonoBehaviour
+namespace Yashlan
 {
-    AudioSource bgMusik;
-
-
-    // Use this for initialization
-    private void Start()
+    public class BackSoundManager : MonoBehaviour
     {
-        bgMusik = GetComponent<AudioSource>();
-        bgMusik.Play();
-    }
+        AudioSource bgMusik;
 
-    private static BackSoundManager instance = null;
-    public static BackSoundManager Instance
-    {
-        get { return instance; }
-    }
 
-    void Awake()
-    {
-        if (instance != null && instance != this)
+        // Use this for initialization
+        private void Start()
         {
-            Destroy(this.gameObject);
-            return;
+            bgMusik = GetComponent<AudioSource>();
+            bgMusik.Play();
         }
 
-        else
+        private static BackSoundManager instance = null;
+        public static BackSoundManager Instance
         {
-            DontDestroyOnLoad(gameObject);
-            instance = this;
+            get { return instance; }
+        }
+
+        void Awake()
+        {
+            if (instance != null && instance != this)
+            {
+                Destroy(this.gameObject);
+                return;
+            }
+
+            else
+            {
+                DontDestroyOnLoad(gameObject);
+                instance = this;
+            }
+        }
+
+
+        // Update is called once per frame
+        public static void PauseBgMenu()
+        {
+            instance.bgMusik.Pause();
+        }
+
+        public static void UnpauseBGMenu()
+        {
+            AudioListener.pause = false;
+            instance.bgMusik.UnPause();
         }
     }
 
-
-    // Update is called once per frame
-    public static void PauseBgMenu()
-    {
-        instance.bgMusik.Pause();
-    }
-
-    public static void UnpauseBGMenu()
-    {
-        AudioListener.pause = false;
-        instance.bgMusik.UnPause();
-    }
 }
