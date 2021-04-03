@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace Yashlan
 {
-    public class PlayerPerfs_TAG : MonoBehaviour
+    public class PlayerPrefs_TAG : MonoBehaviour
     {
 
         #region instance Class
 
-        private static PlayerPerfs_TAG instance = null;
-        public static PlayerPerfs_TAG Instance
+        private static PlayerPrefs_TAG instance = null;
+        public static PlayerPrefs_TAG Instance
         {
             get { return instance; }
         }
@@ -37,7 +37,7 @@ namespace Yashlan
 
         public static string SCORE = "SCORE";
 
-        public static string BGM_VOLUME = "BGM_VOLUME";
+        public static string VOLUME = "VOLUME";
 
         #endregion
     }

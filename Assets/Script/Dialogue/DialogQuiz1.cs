@@ -20,13 +20,16 @@ namespace Yashlan
 
         private void Awake()
         {
+            //reset skor
+            ScoreManager.ResetScore();
+
             var dialogTexts = new List<DialogData>();
 
             dialogTexts.Add(new DialogData(_name + "Hi, saya " + char_name + ".", char_name));
 
             dialogTexts.Add(new DialogData(_name + "Saya akan memberikan beberapa kuis berdasarkan materi ke satu kepada anda.", char_name));
 
-            dialogTexts.Add(new DialogData(_name + "Setiap anda menjawab dengan benar maka skor anda akan bertambah 20, Jika anda menjawab salah akan berkurang 20", char_name));
+            dialogTexts.Add(new DialogData(_name + "Setiap anda menjawab dengan benar maka skor anda akan bertambah 20, Jika anda menjawab salah anda tidak mendapat skor.", char_name));
 
             dialogTexts.Add(new DialogData(_name + "Pastikan anda sudah siap ya.", char_name));
 
@@ -86,7 +89,7 @@ namespace Yashlan
             Soal5.Callback = () => Check_Correct();
 
             dialogTexts.Add(new DialogData(_name + "Oke, anda sudah menjawab semua soal.", char_name));
-            dialogTexts.Add(new DialogData(_name + "Silakan klik tulisan ini untuk melihat hasilnya.", char_name, () => ShowPanelHasil()));
+            dialogTexts.Add(new DialogData(_name + "Silakan klik tulisan ini untuk melihat grade anda.", char_name, () => ShowPanelHasil()));
 
             DialogManager.Show(dialogTexts);
         }
@@ -134,10 +137,7 @@ namespace Yashlan
             {
                 var dialogTexts = new List<DialogData>();
 
-                //min score
-                 ScoreManager.MinScore(20);
-
-                dialogTexts.Add(new DialogData(_name + "Maaf, Jawaban anda salah. Skor anda berkurang 20." , char_name));
+                dialogTexts.Add(new DialogData(_name + "Maaf, Jawaban anda salah. Anda tidak mendapatkan skor." , char_name));
                 dialogTexts.Add(new DialogData(_name + "Skor anda saat ini " + ScoreManager.Score + "."    , char_name));
 
                 DialogManager.Show(dialogTexts);

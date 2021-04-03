@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Yashlan
 {
@@ -47,11 +48,6 @@ namespace Yashlan
             }  
         }
 
-        // Start is called before the first frame update
-        void Start()
-        {
-            score = 0;
-        }
 
         public static void PlusScore(int amount)
         {
@@ -59,10 +55,9 @@ namespace Yashlan
                 instance.score += amount;
         }
 
-        public static void MinScore(int amount)
+        public static void ResetScore()
         {
-            if(instance.score > 0)
-                instance.score -= amount;
+            instance.score = 0;
         }
 
     }

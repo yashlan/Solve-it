@@ -39,14 +39,13 @@ namespace Yashlan
 
 
         // Update is called once per frame
-        public static void PauseBgMenu()
+        public static void Pause()
         {
             instance.bgMusik.Pause();
         }
 
-        public static void UnpauseBGMenu()
+        public static void UnPause()
         {
-            AudioListener.pause = false;
             instance.bgMusik.UnPause();
         }
     }
