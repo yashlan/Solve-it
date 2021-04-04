@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Audio;
 
 namespace Doublsb.Dialog
 {
@@ -19,6 +20,7 @@ namespace Doublsb.Dialog
         public Text Printer_Text;
 
         [Header("Audio Objects")]
+        public AudioMixerGroup audioMixerGroup;
         public AudioSource SEAudio;
         public AudioSource CallAudio;
 
@@ -315,6 +317,7 @@ namespace Doublsb.Dialog
 
         public void playTextSound()
         {
+            SEAudio.outputAudioMixerGroup = audioMixerGroup;
             SEAudio.Play();
         }
 

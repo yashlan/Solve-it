@@ -7,6 +7,7 @@ namespace Yashlan
 {
     public class DialogQuiz1 : MonoBehaviour
     {
+        [Header("Init Obj")]
         public GameObject panelHasil;
         public Text txt_skor;
         public Text txt_grade;

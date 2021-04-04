@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Audio;
 
 namespace Yashlan
 {
@@ -22,8 +23,11 @@ namespace Yashlan
 
         private void Awake()
         {
+            AudioMixerGroup audioMixerGroup = Resources.Load("AudioMixer", typeof(AudioMixerGroup)) as AudioMixerGroup;
             audio_ = gameObject.AddComponent<AudioSource>();
-            textMesh = GetComponent<TextMeshProUGUI>();
+            audio_.outputAudioMixerGroup = audioMixerGroup;
+
+            audio_.clip = sound; textMesh = GetComponent<TextMeshProUGUI>();
         }
 
         void OnEnable()

@@ -41,6 +41,7 @@ namespace Yashlan
         public static string Judul_Materi_1_4 = "KOMENTAR";
         public static string Judul_Materi_1_5 = "VARIABEL";
         public static string Judul_Materi_1_6 = "BOOLEAN";
+        public static string Judul_Materi_1_7 = "STRING";
 
 
         #endregion
@@ -95,6 +96,45 @@ namespace Yashlan
                                           "Tipe data di Booleans hanya ‘benar’ atau ‘salah’. Jadi ini mirip dengan saklar lampu, hanya memiliki dua nilai.\n" +
                                           "contoh :\n<color=red>a = true # true artinya benar</color>\n" +
                                           "<color=red>b = false # false artinya salah";
+
+        public static string MATERI_1_7 = "Ketika ingin belajar Python string, " +
+                                          "Anda hanya perlu menambahkan tanda kutip tunggal " +
+                                          "atau tanda kutip ganda di antara nilai variabel yang ingin ditambahkan. " +
+                                          "Misalnya saja ketika Anda ingin menambahkan string “Anthon” ke dalam variabel x " +
+                                          "maka yang perlu Anda lakukan adalah mendeklarasikannya seperti di bawah ini:\n" +
+                                          "<color=red>x = “Anthon” Atau x = ’Anthon’</color>\n" +
+                                          "<color=red># “Anthon” sama artinya dengan ‘Anthon’.</color>";
+
+        #endregion
+
+
+        #region JUDUL MATERI 2
+
+        public static string Judul_Materi_2_0 = "OPERATOR";
+        public static string Judul_Materi_2_1 = "OPERATOR ARITMATIKA";
+        public static string Judul_Materi_2_2 = "OPERATOR PERBANDINGAN";
+        public static string Judul_Materi_2_3 = "OPERATOR q";
+        public static string Judul_Materi_2_4 = "OPERATOR z";
+        public static string Judul_Materi_2_5 = "OPERATOR m";
+
+        #endregion
+
+        #region Message Materi 2
+
+        public static string MATERI_2_0 = " Selama melakukan proses coding Anda pasti akan " +
+                                          "membutuhkan operator untuk membuat sebuah alur logika, " +
+                                          "penghitungan angka, atau yang lainnya.Operator ini bekerja " +
+                                          "untuk melakukan operasi pada variabel dan nilai.Dalam bahasa " +
+                                          "pemrograman Python, terdapat beberapa grup dari operator, seperti " +
+                                          "operator aritmatika, penugasan (assignment), pembanding (comparison), " +
+                                          "logika (logical), identitas (identity), keanggotaan (membership), dan bitwise.";
+
+        public static string MATERI_2_1 = "";
+        public static string MATERI_2_2 = "";
+        public static string MATERI_2_3 = "";
+        public static string MATERI_2_4 = "";
+        public static string MATERI_2_5 = "";
+        public static string MATERI_2_6 = "";
 
         #endregion
 
