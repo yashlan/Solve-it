@@ -42,6 +42,8 @@ namespace Yashlan
 		int msg_index = 0;
 		int title_index = 0;
 
+
+        #region Initalize Title and Message
 		void SetMessage()
         {
 			if (SceneManager.GetSceneByName("materi 1").isLoaded)
@@ -62,9 +64,16 @@ namespace Yashlan
 				message[0] = MateriRepository.MATERI_2_0;
 				message[1] = MateriRepository.MATERI_2_1;
 				message[2] = MateriRepository.MATERI_2_2;
-				//message[3] = MateriRepository.MATERI_2_3;
-				//message[4] = MateriRepository.MATERI_2_4;
-				//message[5] = MateriRepository.MATERI_2_5;
+				message[3] = MateriRepository.MATERI_2_3;
+			}
+
+			if (SceneManager.GetSceneByName("materi 3").isLoaded)
+            {
+				message[0] = MateriRepository.MATERI_3_0;
+				message[1] = MateriRepository.MATERI_3_1;
+				message[2] = MateriRepository.MATERI_3_2;
+				message[3] = MateriRepository.MATERI_3_3;
+				message[4] = MateriRepository.MATERI_3_4;
 			}
 
 		}
@@ -88,13 +97,22 @@ namespace Yashlan
 				title[0] = MateriRepository.Judul_Materi_2_0;
 				title[1] = MateriRepository.Judul_Materi_2_1;
 				title[2] = MateriRepository.Judul_Materi_2_2;
-				//title[3] = MateriRepository.Judul_Materi_2_3;
-				//title[4] = MateriRepository.Judul_Materi_2_4;
-				//title[5] = MateriRepository.Judul_Materi_2_5;
+				title[3] = MateriRepository.Judul_Materi_2_3;
+			}
+
+			if (SceneManager.GetSceneByName("materi 3").isLoaded)
+			{
+				title[0] = MateriRepository.Judul_Materi_3_0;
+				title[1] = MateriRepository.Judul_Materi_3_1;
+				title[2] = MateriRepository.Judul_Materi_3_2;
+				title[3] = MateriRepository.Judul_Materi_3_3;
+				title[4] = MateriRepository.Judul_Materi_3_4;
 			}
 		}
-		// Use this for initialization
-		void Start()
+        #endregion
+
+        // Use this for initialization
+        void Start()
 		{
 			AudioMixerGroup audioMixerGroup = Resources.Load("AudioMixer", typeof(AudioMixerGroup)) as AudioMixerGroup;
 			audio_ = gameObject.AddComponent<AudioSource>();
@@ -153,6 +171,13 @@ namespace Yashlan
 					HideImage();
 					SetImageMateri2();
 				}
+
+				if (SceneManager.GetSceneByName("materi 3").isLoaded)
+                {
+					HideImage();
+					SetImageMateri3();
+				}
+
 			}
 		}
 
@@ -223,11 +248,14 @@ namespace Yashlan
 				ShowImages(image2);
 			if (textMesh.text == MateriRepository.Judul_Materi_2_3)
 				ShowImages(image3);
-			if (textMesh.text == MateriRepository.Judul_Materi_2_4)
-				ShowImages(image4);
-			if (textMesh.text == MateriRepository.Judul_Materi_2_5)
-				ShowImages(image5);
 		}
+
+		void SetImageMateri3()
+        {
+			if (textMesh.text == MateriRepository.Judul_Materi_3_1)
+				ShowImages(image1);
+		}
+
 
 		void ShowImages(Image image)
         {

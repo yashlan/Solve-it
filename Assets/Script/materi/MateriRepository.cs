@@ -48,23 +48,23 @@ namespace Yashlan
 
         #region Message Materi 1
 
-        public static string MATERI_1_0 = "Python diciptakan oleh Guido van Rossum.\n" +
+        public static string MATERI_1_0 = "Python diciptakan oleh Guido van Rossum. " +
                                           "Pada awalnya, python menghasilkan aplikasi berbasis console, " +
                                           "namun seiring makin populernya bahasa python, " +
-                                          "aplikasi yang dihasilkan mulai beragam fungsi."+
+                                          "aplikasi yang dihasilkan mulai beragam fungsi. "+
                                           "Python adalah bahasa pemrograman interpreter multifungsi " +
                                           "yang berorientasi objek yang memakai filosofi " +
                                           "perancangan dengan fokus kepada tingkat keterbacaan kode.";
 
 
-        public static string MATERI_1_1 = "Bagi pengguna Linux, Python tidak perlu diinstal." +
-                                          "Karena Sebagian besar distro Linux sudah menyediakannya secara default." +
-                                          "Untuk mengeceknya, silahkan ketik perintah <color=red>python --version</color> di terminal.\n" +
+        public static string MATERI_1_1 = "Bagi pengguna Linux, Python tidak perlu diinstal. " +
+                                          "Karena Sebagian besar distro Linux sudah menyediakannya secara default. " +
+                                          "Untuk mengeceknya, silahkan ketik perintah <color=red>python --version</color> di terminal. \n" +
                                           "Untuk Windows Bisa Download di situs resmi python <color=red>(www.python.org/downloads/).</color>";
 
         public static string MATERI_1_2 = "Sesudah Anda memastikan Python sudah terinstall dengan baik" +
-                                          " di perangkat.Langkah selanjutnya adalah melakukan percobaan beberapa" +
-                                          " eksekusi program Python.Namun sebelum itu akan lebih baik" +
+                                          " di perangkat. Langkah selanjutnya adalah melakukan percobaan beberapa" +
+                                          " eksekusi program Python. Namun sebelum itu akan lebih baik" +
                                           " jika mengetahui terlebih dahulu apa saja komponen yang terdapat di dalam Python.";
 
         public static string MATERI_1_3 = "Python sintaks dapat dieksekusi langsung dengan mengetikkannya di Command Line." +
@@ -81,8 +81,7 @@ namespace Yashlan
         public static string MATERI_1_5 = "Python juga memiliki Variabel, " +
                                           "tidak berbeda dengan bahasa pemrograman lainnya. " +
                                           "Variabel ini digunakan untuk proses penyimpanan " +
-                                          "dan bekerja dengan berbagai tipe data." + 
-                                          "Kemudahan lainnya, Anda tidak perlu mendefinisikan tipe variabel." +
+                                          "dan bekerja dengan berbagai tipe data." +                         
                                           " Python secara otomatis akan memberikan tipe variabel sesuai" +
                                           " dengan nilai yang diberikan" +
                                           " pada variabel tersebut. Misalnya pada contoh di bawah ini:\n" +
@@ -110,21 +109,20 @@ namespace Yashlan
 
         #region JUDUL MATERI 2
 
-        public static string Judul_Materi_2_0 = "OPERATOR";
+        public static string Judul_Materi_2_0 = "PENGENALAN OPERATOR";
         public static string Judul_Materi_2_1 = "OPERATOR ARITMATIKA";
         public static string Judul_Materi_2_2 = "OPERATOR PERBANDINGAN";
-        public static string Judul_Materi_2_3 = "OPERATOR q";
-        public static string Judul_Materi_2_4 = "OPERATOR z";
-        public static string Judul_Materi_2_5 = "OPERATOR m";
+        public static string Judul_Materi_2_3 = "OPERATOR LOGIKA";
+
 
         #endregion
 
         #region Message Materi 2
 
-        public static string MATERI_2_0 = " Selama melakukan proses coding Anda pasti akan " +
+        public static string MATERI_2_0 = "Selama melakukan proses coding Anda pasti akan " +
                                           "membutuhkan operator untuk membuat sebuah alur logika, " +
                                           "penghitungan angka, atau yang lainnya.Operator ini bekerja " +
-                                          "untuk melakukan operasi pada variabel dan nilai.Dalam bahasa " +
+                                          "untuk melakukan operasi pada variabel dan nilai. Dalam bahasa " +
                                           "pemrograman Python, terdapat beberapa grup dari operator, seperti " +
                                           "operator aritmatika, penugasan (assignment), pembanding (comparison), " +
                                           "logika (logical), identitas (identity), keanggotaan (membership), dan bitwise.";
@@ -132,11 +130,63 @@ namespace Yashlan
         public static string MATERI_2_1 = "";
         public static string MATERI_2_2 = "";
         public static string MATERI_2_3 = "";
-        public static string MATERI_2_4 = "";
-        public static string MATERI_2_5 = "";
-        public static string MATERI_2_6 = "";
 
         #endregion
+
+
+        #region JUDUL MATERI 3
+
+        public static string Judul_Materi_3_0 = "PERCABANGAN";
+        public static string Judul_Materi_3_1 = "PERNYATAAN/STATEMENT";
+        public static string Judul_Materi_3_2 = "PERNYATAAN IF";
+        public static string Judul_Materi_3_3 = "PERNYATAAN IF ELSE";
+        public static string Judul_Materi_3_4 = "PERNYATAAN IF ELIF ELSE";
+
+        #endregion
+
+        #region Message MATERI 3
+
+        public static string MATERI_3_0 = "Percabangan adalah cara yang digunakan untuk " +
+                                          "mengambil keputusan apabila di dalam program " +
+                                          "dihadapkan pada kondisi tertentu. Jumlah kondisinya bisa satu, dua atau lebih. " + 
+                                          "Percabangan mengevaluasi kondisi atau ekspresi yang hasilnya benar atau salah. " +
+                                          "Kondisi atau ekspresi tersebut disebut ekspresi boolean. " +
+                                          "Hasil dari pengecekan kondisi adalah True atau False. Bila benar (True), " +
+                                          "maka pernyataan yang ada di dalam blok kondisi tersebut akan dieksekusi. " +
+                                          "Bila salah (False), maka blok pernyataan lain yang dieksekusi.";
+
+        public static string MATERI_3_1 = "";
+
+        public static string MATERI_3_2 = "Pernyataan if menguji satu buah kondisi. " +
+                                          "Bila hasilnya benar maka pernyataan di dalam blok if tersebut dieksekusi. " +
+                                          "Bila salah, maka pernyataan tidak dieksekusi. " +
+                                          "Sintaksnya adalah seperti berikut:\n\n" + 
+                                          "<color=red>if kondisi:\n" +
+                                          "    blok pernyataan if</color>";
+
+        public static string MATERI_3_3 = "Pernyataan if…else menguji 2 kondisi. " +
+                                          "Kondisi pertama kalau benar, dan kondisi kedua kalau salah. " +
+                                          "Sintaksnya adalah seperti berikut:\n\n" +
+                                          "<color=red>if kondisi:\n" +
+                                          "    blok pernyataan if\n" + 
+                                          "else:\n" +
+                                          "    blok pernyataan else</color>";
+
+        public static string MATERI_3_4 = "Pernyataan ini digunakan untuk menguji lebih dari 2 kondisi. " +
+                                          "Bila kondisi pada if benar, maka pernyataan di dalamnya yang dieksekusi. " +
+                                          "Bila salah, maka masuk ke pengujian kondisi elif. " +
+                                          "Terakhir bila tidak ada if atau elif yang benar, " +
+                                          "maka yang dijalankan adalah yang di blok else. " +
+                                          "Sintaksnya adalah seperti berikut:\n" +
+                                          "<color=red>if kondisi :\n" +
+                                          "    blok pernyataan if\n" + 
+                                          "elif kondisi:\n" +
+                                          "    blok pernyataan elif\n" +
+                                          "else:\n" +
+                                          "    blok pernyataan else</color>";
+        #endregion
+
+
 
     }
 

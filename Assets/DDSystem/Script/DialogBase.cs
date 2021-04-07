@@ -122,7 +122,7 @@ namespace Doublsb.Dialog
             this.Character = character;
         }
 
-        public DialogData(string originalString, string character = "") // cannot skip
+        public DialogData(string originalString, string character = "") // otomatis cannot skip
         {
             _convert(originalString);
 

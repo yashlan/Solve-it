@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 namespace Yashlan
 {
@@ -51,13 +48,13 @@ namespace Yashlan
 
         public static void PlusScore(int amount)
         {
-            if(instance.score < 100)
-                instance.score += amount;
+            if(Score < 100)
+                Score += amount;
         }
 
         public static void ResetScore()
         {
-            instance.score = 0;
+            Score = 0;
         }
 
     }
