@@ -2160,10 +2160,8 @@ MonoBehaviour:
   title: []
   message:
   - Halo, Selamat Datang
-  - Solve it adalah app tentang
-  - Belajar pemrograman Python
-  - Yuk tekan tombol mulai
-  - untuk lanjut ke laman berikutnya
+  - Solve it adalah game tentang pengenalan bahasa pemrograman python
+  - Yuk tekan tombol mulai untuk langsung mempelajarinya
 --- !u!222 &955969321
 CanvasRenderer:
   m_ObjectHideFlags: 0

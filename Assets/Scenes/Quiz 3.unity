@@ -681,10 +681,10 @@ RectTransform:
   m_Father: {fileID: 1331211101}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.40375003, y: 0.29943058}
-  m_AnchorMax: {x: 0.7175001, y: 0.7107083}
-  m_AnchoredPosition: {x: -0.09899902, y: 0.3691101}
-  m_SizeDelta: {x: -0.19798279, y: -0.73825073}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 70, y: -79.63098}
+  m_SizeDelta: {x: 250.80202, y: 159.26175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &510717652
 GameObject:
@@ -1380,6 +1380,7 @@ GameObject:
   - component: {fileID: 778555318}
   - component: {fileID: 778555317}
   - component: {fileID: 778555320}
+  - component: {fileID: 778555321}
   m_Layer: 5
   m_Name: button Kembali
   m_TagString: Untagged
@@ -1510,6 +1511,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b4a5c0e24a98840a07ea4ab1947a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &778555321
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778555315}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de6df5c7f0ae2e74bad60610fbd4c964, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &793186578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4094011683457312917, guid: d536fa71dd00cf349a228e41212ace48,
@@ -2010,10 +2030,10 @@ RectTransform:
   m_Father: {fileID: 1331211101}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.40375003, y: 0.30456945}
-  m_AnchorMax: {x: 0.7175001, y: 0.6824168}
-  m_AnchoredPosition: {x: 0.30200195, y: 0.7799988}
-  m_SizeDelta: {x: -1, y: 1.6343842}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 70, y: -74.317}
+  m_SizeDelta: {x: 250, y: 148.6344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1288587945
 CanvasRenderer:
