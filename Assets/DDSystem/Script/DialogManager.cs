@@ -108,7 +108,15 @@ namespace Doublsb.Dialog
         public void Select(int index)
         {
             Result = _current_Data.SelectList.GetByIndex(index).Key;
+            Get_Selection_Value(index);
             Hide();
+        }
+
+        public static string selection_value = null;
+        public string Get_Selection_Value(int index)
+        {
+            selection_value = _current_Data.SelectList.GetByIndex(index).Value;
+            return selection_value;
         }
 
         #endregion

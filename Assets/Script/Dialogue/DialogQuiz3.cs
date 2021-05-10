@@ -154,7 +154,7 @@ namespace Yashlan
 
                 var dialogTexts = new List<DialogData>();
 
-                dialogTexts.Add(new DialogData(_name + "Selamat, Jawaban anda benar. Skor anda bertambah 20.", char_name));
+                dialogTexts.Add(new DialogData(_name + "Selamat, Jawaban anda (" + DialogManager.selection_value + ") benar. Skor anda bertambah 20.", char_name));
                 dialogTexts.Add(new DialogData(_name + "Skor anda saat ini " + ScoreManager.Score + ".", char_name));
 
                 DialogManager.Show(dialogTexts);
@@ -163,7 +163,7 @@ namespace Yashlan
             {
                 var dialogTexts = new List<DialogData>();
 
-                dialogTexts.Add(new DialogData(_name + "Maaf, Jawaban anda salah. Anda tidak mendapatkan skor.", char_name));
+                dialogTexts.Add(new DialogData(_name + "Maaf, Jawaban anda (" + DialogManager.selection_value + ") salah. Anda tidak mendapatkan skor.", char_name));
                 dialogTexts.Add(new DialogData(_name + "Skor anda saat ini " + ScoreManager.Score + ".", char_name));
 
                 DialogManager.Show(dialogTexts);
