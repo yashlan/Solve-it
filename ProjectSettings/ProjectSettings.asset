@@ -16,7 +16,7 @@ PlayerSettings:
   productName: Solve It
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.1137255, g: 0.5921569, b: 0.59607846, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
@@ -42,7 +42,7 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
-  - logo: {fileID: 21300000, guid: 5ba35e7d4e288b847943f9cc18af00fc, type: 3}
+  - logo: {fileID: 21300000, guid: 6753df4dee582fb44b159bf5fe601c71, type: 3}
     duration: 2
   - logo: {fileID: 21300000, guid: bb4f1235b62989a4ab3628adea4f96e9, type: 3}
     duration: 2

@@ -17,6 +17,7 @@ namespace Doublsb.Dialog
         public GameObject Characters;
 
         [Header("UI Objects")]
+        public Text skipText;
         public Text Printer_Text;
 
         [Header("Audio Objects")]
@@ -195,6 +196,7 @@ namespace Doublsb.Dialog
             Printer_Text.text = string.Empty;
 
             Printer.SetActive(true);
+            skipText.gameObject.SetActive(false);
 
             Characters.SetActive(_current_Character != null);
             foreach (Transform item in Characters.transform) item.gameObject.SetActive(false);
@@ -318,6 +320,14 @@ namespace Doublsb.Dialog
 
                 if (Text[i] != ' ') playTextSound();
                 if (_currentDelay != 0) yield return new WaitForSeconds(_currentDelay);
+            }
+
+            skipText.gameObject.SetActive(false);
+
+            if(_current_Data.PrintText.Length == Printer_Text.text.Length)
+            {
+                skipText.gameObject.SetActive(true);
+                print("okeeee");
             }
 
             _current_Data.PrintText += _current_Data.Format.CloseTagger;

@@ -166,6 +166,16 @@ namespace Yashlan
 
 			if (useImage)
 			{
+				if(SceneManager.GetSceneByName("materi 1").isLoaded)
+                {
+					if (textMesh.text.Contains("Guido van Rossum"))
+					{
+						image0.gameObject.SetActive(true);
+					}
+					else
+						image0.gameObject.SetActive(false);
+                }
+
 				if (SceneManager.GetSceneByName("materi 2").isLoaded)
 				{
 					HideImage();

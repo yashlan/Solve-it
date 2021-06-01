@@ -12,11 +12,11 @@ namespace Yashlan
         public float delay;
         const string msg = "GAME INI DIBUAT OLEH :\n\n" +
                            "Programmer\n\n" +
-                           "Muhammad Yashlan Iskandar\n\n" +
+                           "Muhammad Yashlan Iskandar\n(18312170)\n\n" +
                            "Design Grafis\n\n" +
-                           "Devka Savana\n\n" +
+                           "Devka Savana\n(18312122)\n\n" +
                            "Komposer\n\n" +
-                           "Farhan Rosyid";
+                           "Farhan Rosyid\n(18312108)";
 
         private TextMeshProUGUI textMesh;
         private AudioSource audio_;
