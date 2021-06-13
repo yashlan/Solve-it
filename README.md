@@ -9,7 +9,5 @@ Programmer    : Muhammad Yashlan Iskandar 18312170 </br>
 Composer      : Farhan Rosyid 18312108 </br>
 
 # ScreenShoot
-![](ss/Screenshot_1.png)
-![](ss/Screenshot_2.png)
-![](ss/Screenshot_3.png)
+
 
